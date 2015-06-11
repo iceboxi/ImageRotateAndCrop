@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageCropViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, ImageCropViewControllerDelegate> {
+    IBOutlet UIImageView *imageView;
+}
 
+- (IBAction)openBarButtonClick:(id)sender;
+- (IBAction)cropBarButtonClick:(id)sender;
+- (IBAction)rotateBarButtonClick:(id)sender;
 
 @end
 

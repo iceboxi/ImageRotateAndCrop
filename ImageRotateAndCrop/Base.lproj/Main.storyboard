@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ji-Wz-tRX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-kY-8VM">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" placeholder="YES" id="69I-9f-xWw"/>
+                                    <constraint firstAttribute="height" constant="300" placeholder="YES" id="yva-xH-wEd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-TV-cer">
+                                <rect key="frame" x="534" y="506" width="46" height="30"/>
+                                <state key="normal" title="Rotate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateBarButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ew8-V3-NMn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mmd-TV-cer" secondAttribute="bottom" constant="20" id="2QM-Cl-vwX"/>
+                            <constraint firstItem="fkm-kY-8VM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ARd-Wl-PN6"/>
+                            <constraint firstItem="fkm-kY-8VM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GV6-me-J0b"/>
+                            <constraint firstAttribute="trailing" secondItem="Mmd-TV-cer" secondAttribute="trailing" constant="20" id="YVq-Cn-DLE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fkm-kY-8VM" secondAttribute="trailing" id="c1Y-aL-E66"/>
+                            <constraint firstAttribute="centerY" secondItem="fkm-kY-8VM" secondAttribute="centerY" id="ddM-uF-KAR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fkm-kY-8VM" secondAttribute="bottom" id="opQ-Oe-HQY"/>
+                            <constraint firstAttribute="centerX" secondItem="fkm-kY-8VM" secondAttribute="centerX" id="rfI-Us-y7M"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hxB-8M-bMP">
+                        <barButtonItem key="leftBarButtonItem" title="Open" id="CMG-In-bMl">
+                            <connections>
+                                <action selector="openBarButtonClick:" destination="BYZ-38-t0r" id="C7z-La-fis"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Crop" id="khH-ew-9pJ">
+                            <connections>
+                                <action selector="cropBarButtonClick:" destination="BYZ-38-t0r" id="Bqb-tB-Je2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="fkm-kY-8VM" id="wK3-y5-ecH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1381" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WVj-E9-Evs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ji-Wz-tRX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IDV-NY-jyj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Rx-WG-ukI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHc-eP-b20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="348"/>
         </scene>
     </scenes>
 </document>

@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    if ([self.navigationController respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.navigationController.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {

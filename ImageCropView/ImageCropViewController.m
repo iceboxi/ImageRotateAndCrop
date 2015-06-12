@@ -38,6 +38,9 @@
 {
     [super viewDidLoad];
     if (self){
+//        if ([self.navigationController respondsToSelector:@selector(edgesForExtendedLayout)])
+//            self.navigationController.edgesForExtendedLayout = UIRectEdgeNone;
+        
         UIView *contentView = [[UIView alloc] init];
         contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         contentView.backgroundColor = [UIColor whiteColor];
@@ -52,7 +55,7 @@
                                                   target:self
                                                   action:@selector(done:)];
         CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
-        CGRect view = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - [[self navigationController] navigationBar].bounds.size.height - statusBarSize.height);
+        CGRect view = CGRectMake(0, [[self navigationController] navigationBar].bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height - [[self navigationController] navigationBar].bounds.size.height - statusBarSize.height);
         self.cropView  = [[ImageCropView alloc] initWithFrame:view blurOn:self.blurredBackground];
         self.view = contentView;
         [contentView addSubview:cropView];
@@ -71,7 +74,6 @@
 
 - (IBAction)done:(id)sender
 {
-    
     if ([self.delegate respondsToSelector:@selector(ImageCropViewController:didFinishCroppingImage:)])
     {
         UIImage *cropped;
@@ -84,7 +86,6 @@
         }
         [self.delegate ImageCropViewController:self didFinishCroppingImage:cropped];
     }
-    
 }
 
 @end

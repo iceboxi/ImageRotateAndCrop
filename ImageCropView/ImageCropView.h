@@ -10,7 +10,6 @@
 
 CGRect SquareCGRectAtCenter(CGFloat centerX, CGFloat centerY, CGFloat size);
 
-UIView* dragView;
 typedef struct {
     CGPoint dragStart;
     CGPoint topLeftCenter;

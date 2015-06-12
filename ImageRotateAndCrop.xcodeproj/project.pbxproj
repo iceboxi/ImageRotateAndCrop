@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A0F4F91B2AB08C0098EBCA /* ControlPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4EB1B2AB08C0098EBCA /* ControlPointView.m */; };
+		14A0F4FA1B2AB08C0098EBCA /* CropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4ED1B2AB08C0098EBCA /* CropperOverlayView.m */; };
+		14A0F4FB1B2AB08C0098EBCA /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4F01B2AB08C0098EBCA /* FXBlurView.m */; };
+		14A0F4FC1B2AB08C0098EBCA /* ImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4F21B2AB08C0098EBCA /* ImageCropView.m */; };
+		14A0F4FD1B2AB08C0098EBCA /* ImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4F41B2AB08C0098EBCA /* ImageCropViewController.m */; };
+		14A0F4FE1B2AB08C0098EBCA /* ShadeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4F61B2AB08C0098EBCA /* ShadeView.m */; };
+		14A0F4FF1B2AB08C0098EBCA /* UIImage-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0F4F81B2AB08C0098EBCA /* UIImage-Extension.m */; };
 		14ADB00B1B29B558000592BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB00A1B29B558000592BA /* main.m */; };
 		14ADB00E1B29B558000592BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB00D1B29B558000592BA /* AppDelegate.m */; };
 		14ADB0111B29B558000592BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0101B29B558000592BA /* ViewController.m */; };
@@ -14,13 +21,6 @@
 		14ADB0161B29B558000592BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ADB0151B29B558000592BA /* Images.xcassets */; };
 		14ADB0191B29B558000592BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14ADB0171B29B558000592BA /* LaunchScreen.xib */; };
 		14ADB0251B29B558000592BA /* ImageRotateAndCropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0241B29B558000592BA /* ImageRotateAndCropTests.m */; };
-		14ADB0311B29B5E6000592BA /* CropperOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0301B29B5E6000592BA /* CropperOverlayView.m */; };
-		14ADB0341B29B64D000592BA /* UIImage-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0331B29B64D000592BA /* UIImage-Extension.m */; };
-		14ADB0371B29B79A000592BA /* ControlPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0361B29B79A000592BA /* ControlPointView.m */; };
-		14ADB03C1B29B991000592BA /* ShadeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB03B1B29B991000592BA /* ShadeView.m */; };
-		14ADB03F1B29BA00000592BA /* ImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB03E1B29BA00000592BA /* ImageCropView.m */; };
-		14ADB0431B29BBA2000592BA /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0421B29BBA2000592BA /* FXBlurView.m */; };
-		14ADB0461B29BC65000592BA /* ImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADB0451B29BC65000592BA /* ImageCropViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14A0F4EA1B2AB08C0098EBCA /* ControlPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPointView.h; sourceTree = "<group>"; };
+		14A0F4EB1B2AB08C0098EBCA /* ControlPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPointView.m; sourceTree = "<group>"; };
+		14A0F4EC1B2AB08C0098EBCA /* CropperOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropperOverlayView.h; sourceTree = "<group>"; };
+		14A0F4ED1B2AB08C0098EBCA /* CropperOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropperOverlayView.m; sourceTree = "<group>"; };
+		14A0F4EF1B2AB08C0098EBCA /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		14A0F4F01B2AB08C0098EBCA /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		14A0F4F11B2AB08C0098EBCA /* ImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropView.h; sourceTree = "<group>"; };
+		14A0F4F21B2AB08C0098EBCA /* ImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropView.m; sourceTree = "<group>"; };
+		14A0F4F31B2AB08C0098EBCA /* ImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropViewController.h; sourceTree = "<group>"; };
+		14A0F4F41B2AB08C0098EBCA /* ImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropViewController.m; sourceTree = "<group>"; };
+		14A0F4F51B2AB08C0098EBCA /* ShadeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadeView.h; sourceTree = "<group>"; };
+		14A0F4F61B2AB08C0098EBCA /* ShadeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadeView.m; sourceTree = "<group>"; };
+		14A0F4F71B2AB08C0098EBCA /* UIImage-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extension.h"; sourceTree = "<group>"; };
+		14A0F4F81B2AB08C0098EBCA /* UIImage-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extension.m"; sourceTree = "<group>"; };
 		14ADB0051B29B558000592BA /* ImageRotateAndCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRotateAndCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ADB0091B29B558000592BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14ADB00A1B29B558000592BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,21 +61,6 @@
 		14ADB01E1B29B558000592BA /* ImageRotateAndCropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRotateAndCropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ADB0231B29B558000592BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14ADB0241B29B558000592BA /* ImageRotateAndCropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRotateAndCropTests.m; sourceTree = "<group>"; };
-		14ADB02F1B29B5E6000592BA /* CropperOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropperOverlayView.h; sourceTree = "<group>"; };
-		14ADB0301B29B5E6000592BA /* CropperOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropperOverlayView.m; sourceTree = "<group>"; };
-		14ADB0321B29B64D000592BA /* UIImage-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extension.h"; sourceTree = "<group>"; };
-		14ADB0331B29B64D000592BA /* UIImage-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extension.m"; sourceTree = "<group>"; };
-		14ADB0351B29B79A000592BA /* ControlPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPointView.h; sourceTree = "<group>"; };
-		14ADB0361B29B79A000592BA /* ControlPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPointView.m; sourceTree = "<group>"; };
-		14ADB0391B29B890000592BA /* ImageCropViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCropViewHeader.h; sourceTree = "<group>"; };
-		14ADB03A1B29B991000592BA /* ShadeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadeView.h; sourceTree = "<group>"; };
-		14ADB03B1B29B991000592BA /* ShadeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadeView.m; sourceTree = "<group>"; };
-		14ADB03D1B29BA00000592BA /* ImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropView.h; sourceTree = "<group>"; };
-		14ADB03E1B29BA00000592BA /* ImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropView.m; sourceTree = "<group>"; };
-		14ADB0411B29BBA2000592BA /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
-		14ADB0421B29BBA2000592BA /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
-		14ADB0441B29BC65000592BA /* ImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropViewController.h; sourceTree = "<group>"; };
-		14ADB0451B29BC65000592BA /* ImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A0F4E91B2AB08C0098EBCA /* ImageCropView */ = {
+			isa = PBXGroup;
+			children = (
+				14A0F4EE1B2AB08C0098EBCA /* FXBlurView */,
+				14A0F4EA1B2AB08C0098EBCA /* ControlPointView.h */,
+				14A0F4EB1B2AB08C0098EBCA /* ControlPointView.m */,
+				14A0F4EC1B2AB08C0098EBCA /* CropperOverlayView.h */,
+				14A0F4ED1B2AB08C0098EBCA /* CropperOverlayView.m */,
+				14A0F4F11B2AB08C0098EBCA /* ImageCropView.h */,
+				14A0F4F21B2AB08C0098EBCA /* ImageCropView.m */,
+				14A0F4F31B2AB08C0098EBCA /* ImageCropViewController.h */,
+				14A0F4F41B2AB08C0098EBCA /* ImageCropViewController.m */,
+				14A0F4F51B2AB08C0098EBCA /* ShadeView.h */,
+				14A0F4F61B2AB08C0098EBCA /* ShadeView.m */,
+				14A0F4F71B2AB08C0098EBCA /* UIImage-Extension.h */,
+				14A0F4F81B2AB08C0098EBCA /* UIImage-Extension.m */,
+			);
+			path = ImageCropView;
+			sourceTree = "<group>";
+		};
+		14A0F4EE1B2AB08C0098EBCA /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				14A0F4EF1B2AB08C0098EBCA /* FXBlurView.h */,
+				14A0F4F01B2AB08C0098EBCA /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
 		14ADAFFC1B29B558000592BA = {
 			isa = PBXGroup;
 			children = (
-				14ADB02E1B29B5B9000592BA /* ImageCropView */,
+				14A0F4E91B2AB08C0098EBCA /* ImageCropView */,
 				14ADB0071B29B558000592BA /* ImageRotateAndCrop */,
 				14ADB0211B29B558000592BA /* ImageRotateAndCropTests */,
 				14ADB0061B29B558000592BA /* Products */,
@@ -140,36 +168,6 @@
 				14ADB0231B29B558000592BA /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		14ADB02E1B29B5B9000592BA /* ImageCropView */ = {
-			isa = PBXGroup;
-			children = (
-				14ADB0401B29BBA2000592BA /* FXBlurView */,
-				14ADB0391B29B890000592BA /* ImageCropViewHeader.h */,
-				14ADB02F1B29B5E6000592BA /* CropperOverlayView.h */,
-				14ADB0301B29B5E6000592BA /* CropperOverlayView.m */,
-				14ADB0321B29B64D000592BA /* UIImage-Extension.h */,
-				14ADB0331B29B64D000592BA /* UIImage-Extension.m */,
-				14ADB0351B29B79A000592BA /* ControlPointView.h */,
-				14ADB0361B29B79A000592BA /* ControlPointView.m */,
-				14ADB03A1B29B991000592BA /* ShadeView.h */,
-				14ADB03B1B29B991000592BA /* ShadeView.m */,
-				14ADB03D1B29BA00000592BA /* ImageCropView.h */,
-				14ADB03E1B29BA00000592BA /* ImageCropView.m */,
-				14ADB0441B29BC65000592BA /* ImageCropViewController.h */,
-				14ADB0451B29BC65000592BA /* ImageCropViewController.m */,
-			);
-			name = ImageCropView;
-			sourceTree = "<group>";
-		};
-		14ADB0401B29BBA2000592BA /* FXBlurView */ = {
-			isa = PBXGroup;
-			children = (
-				14ADB0411B29BBA2000592BA /* FXBlurView.h */,
-				14ADB0421B29BBA2000592BA /* FXBlurView.m */,
-			);
-			path = FXBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,16 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A0F4FC1B2AB08C0098EBCA /* ImageCropView.m in Sources */,
 				14ADB0111B29B558000592BA /* ViewController.m in Sources */,
-				14ADB03C1B29B991000592BA /* ShadeView.m in Sources */,
+				14A0F4FD1B2AB08C0098EBCA /* ImageCropViewController.m in Sources */,
+				14A0F4FA1B2AB08C0098EBCA /* CropperOverlayView.m in Sources */,
 				14ADB00E1B29B558000592BA /* AppDelegate.m in Sources */,
 				14ADB00B1B29B558000592BA /* main.m in Sources */,
-				14ADB0461B29BC65000592BA /* ImageCropViewController.m in Sources */,
-				14ADB03F1B29BA00000592BA /* ImageCropView.m in Sources */,
-				14ADB0311B29B5E6000592BA /* CropperOverlayView.m in Sources */,
-				14ADB0341B29B64D000592BA /* UIImage-Extension.m in Sources */,
-				14ADB0371B29B79A000592BA /* ControlPointView.m in Sources */,
-				14ADB0431B29BBA2000592BA /* FXBlurView.m in Sources */,
+				14A0F4FE1B2AB08C0098EBCA /* ShadeView.m in Sources */,
+				14A0F4F91B2AB08C0098EBCA /* ControlPointView.m in Sources */,
+				14A0F4FB1B2AB08C0098EBCA /* FXBlurView.m in Sources */,
+				14A0F4FF1B2AB08C0098EBCA /* UIImage-Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +476,7 @@
 				14ADB02A1B29B558000592BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14ADB02B1B29B558000592BA /* Build configuration list for PBXNativeTarget "ImageRotateAndCropTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +485,7 @@
 				14ADB02D1B29B558000592BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

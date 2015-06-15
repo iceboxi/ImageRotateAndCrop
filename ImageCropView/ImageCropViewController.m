@@ -80,9 +80,8 @@
         if (self.image != nil){
             CGRect CropRect = self.cropView.cropAreaInImage;
             CGImageRef imageRef = CGImageCreateWithImageInRect([self.image CGImage], CropRect) ;
-            cropped = [UIImage imageWithCGImage:imageRef];
+            cropped = [UIImage imageWithCGImage:imageRef scale:0 orientation:self.image.imageOrientation];
             CGImageRelease(imageRef);
-            cropped = [cropped imageRotatedByRadians:90 * cropView.rotateFlag * M_PI / 180];
         }
         [self.delegate ImageCropViewController:self didFinishCroppingImage:cropped];
     }

@@ -58,7 +58,6 @@ CGRect SquareCGRectAtCenter(CGFloat centerX, CGFloat centerY, CGFloat size) {
 
 - (void)initViews {
     CGRect subviewFrame = self.bounds;
-    self.rotateFlag = 0;
     
     //the shade
     self.shadeView = [[ShadeView alloc] initWithFrame:subviewFrame];

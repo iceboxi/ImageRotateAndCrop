@@ -59,6 +59,5 @@ typedef struct {
 @property (nonatomic, retain) UIColor* controlColor;
 @property (nonatomic, strong) ShadeView* shadeView;
 @property (nonatomic) BOOL blurred;
-@property (nonatomic) NSUInteger rotateFlag;
 
 @end
